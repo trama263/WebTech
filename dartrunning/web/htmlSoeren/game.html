@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>RunningMan</title>
+    <link rel="stylesheet" href="styles/gamescreen.css">
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+<body>
+<div class="game">
+    <!-- Die Spielinformationen -->
+    <div id="informationTable">
+        <table id="infos">
+            <thead>
+            <tr>
+                <th><div id="event">EVENT: </div></th>
+                <th><div class="values" id="levelValue"></div></th>
+                <th><div id="score">POINTS: </div></th>
+                <th><div class="values" id="pointsValue"></div></th>
+                <th><div id="lives">LIVES: </div></th>
+                <th><div class="values" id="livesValue"></div></th>
+                <th><div id="timer">TIMER: </div></th>
+                <th><div class="values" id="timeValue"></div></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <!-- Das Spielfeld -->
+    <div id="gamefield"></div>
+    <div class="mobileKeys">
+        <table id="keylayout">
+            <tbody>
+            <tr id="keys">
+                <td id="leftButton"></td>
+                <td class="play-pause">
+                    <div id="play"></div>
+                    <div id="pause"></div>
+                </td>
+                <td id="rightButton"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <a id="backGAME" href="index.html">BACK TO MAIN MENU</a>
+    </div>
+</div>
+</body>
+</html>
